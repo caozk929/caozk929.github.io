@@ -49,6 +49,6 @@ function timeElapse(date){
 		hours = "0" + hours;
 	}
 	var days = Math.floor(seconds / (3600 * 24));
-	var result = "第 <span class=\"digit\">" + days + "</span> 天 <span class=\"digit\">" + hours + "</span> 小时 <span class=\"digit\">" + minutes + "</span> 分钟   <span class=\"digit\">" + seconds + "</span> 秒";
+	var result = "第 <span class=\"digit\">" + days + "</span> 天 <span class=\"digit\">" + hours + "</span> 小时 <span class=\"digit\">" + minutes + "</span> 分钟 &nbsp;&nbsp;&nbsp;&nbsp;<span class=\"digit\">" + seconds + "</span> 秒";
 	$("#clock").html(result);
 }
