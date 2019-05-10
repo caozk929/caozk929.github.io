@@ -39,7 +39,7 @@ $(window).resize(function() {
 
 function timeElapse(date){
 	var current = new Date();
-	var seconds = (current - date) / 1000;
+	var seconds = Math.floor((current - date) / 1000)
 	var minutes = Math.floor(seconds / 60);
 	if (minutes < 10) {
 		minutes = "0" + minutes;
